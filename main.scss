@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font: {
+        family: 'Open Sans', sans-serif;
+        weight: lighter;
+        size: 2em;
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    @include flex-center();
+    h1,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
